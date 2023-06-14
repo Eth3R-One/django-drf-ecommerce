@@ -11,7 +11,4 @@ from rest_framework.routers import DefaultRouter
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-
-
-
 ]
