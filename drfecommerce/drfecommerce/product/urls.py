@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.urls import include, path
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
 from rest_framework.routers import DefaultRouter
-
+from . import views
 # from drfecommerce.product import views
 
 # router = DefaultRouter()
@@ -10,6 +10,5 @@ from rest_framework.routers import DefaultRouter
 # router.register(r"product", views.ProductViewSet)
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
-    path("test/", include("drfecommerce.product.urls")),
+   path("", views.test, name="test")
 ]

@@ -22,7 +22,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "drf_spectacular",
     # Internal Apps
-    # "drfecommerce.product",
+    "drfecommerce.product.apps.ProductConfig",
     # "mptt",
 ]
 
